@@ -1,0 +1,15 @@
+current directory: /home/ec2-user/environment/pictgram/vendor/bundle/ruby/2.7.0/gems/debug_inspector-1.1.0/ext/debug_inspector
+/home/ec2-user/.rbenv/versions/2.7.3/bin/ruby -I /home/ec2-user/.rbenv/versions/2.7.3/lib/ruby/2.7.0 -r ./siteconf20230614-9387-15xl0mp.rb extconf.rb
+creating Makefile
+
+current directory: /home/ec2-user/environment/pictgram/vendor/bundle/ruby/2.7.0/gems/debug_inspector-1.1.0/ext/debug_inspector
+make "DESTDIR=" clean
+
+current directory: /home/ec2-user/environment/pictgram/vendor/bundle/ruby/2.7.0/gems/debug_inspector-1.1.0/ext/debug_inspector
+make "DESTDIR="
+compiling debug_inspector.c
+linking shared-object debug_inspector.so
+
+current directory: /home/ec2-user/environment/pictgram/vendor/bundle/ruby/2.7.0/gems/debug_inspector-1.1.0/ext/debug_inspector
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 debug_inspector.so ./.gem.20230614-9387-adofsx
