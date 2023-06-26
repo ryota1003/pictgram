@@ -116,5 +116,20 @@ h1, h2 {
       height: 30px;
       margin-left: 20px;
     }
+    
+    .topic-index-comment {
+      font-size: 20px;
+      margin-left: 20px;
+    }
+    
+    .topic-index-icon-red {
+      width: 35px;
+      height: 30px;
+      margin-left: 20px;
+      // webkitの記述は、ベンダープレフィックスと呼ばれCSS3で実装予定の機能をブラウザ各社が先行して実装した機能を各ブラウザで使えるようにしたものです。
+      -webkit-filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(400%) contrast(2);
+      filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+    }
+
   }
 }
