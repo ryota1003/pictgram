@@ -4,6 +4,7 @@ class TopicsController < ApplicationController
   end
   
   def new
+    #@topic変数に、Topicクラスのインスタンスを生成し、代入している
     @topic = Topic.new
   end
 

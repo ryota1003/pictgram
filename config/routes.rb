@@ -1,32 +1,11 @@
 Rails.application.routes.draw do
-  # get 'comments/index'
-  # get 'comments/new'
-  # get 'comments/create'
-  # get 'topics/new'
-  # get 'sessions/new'
-
-  # root 'pages#index'
-  # get 'pages/help'
-
-  # resources :users
-
-  # get    '/login',   to: 'sessions#new'
-  # post   '/login',   to: 'sessions#create'
-  # delete '/logout',  to: 'sessions#destroy'
-  
-  # resources :users
-  # resources :topics
-  
-  # get 'favorites/index'
-  # post '/favorites', to: 'favorites#create'
-  
-  
-  #get 'sessions/new'
-
   root 'pages#index'
   get 'pages/help'
+  #第2引数が省略されているのは第1引数と同じだから(to:pages#helpが省略されている)
 
-  get    '/login',   to: 'sessions#new'
+  get('/login',   to: 'sessions#new')
+  #get('第1引数', '第2引数')
+  #第1引数にアクセスがきたら第2引数へ
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
 
@@ -38,6 +17,7 @@ Rails.application.routes.draw do
   delete '/favorites',  to: 'favorites#destroy'
 
   get 'comments/index'
+  #comments/indexとうってもアクセスエラーになるのはなぜか。
   get 'comments/new'
   post '/comments', to: 'comments#create'
 end
