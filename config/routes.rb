@@ -20,5 +20,8 @@ Rails.application.routes.draw do
   #comments/indexとうってもアクセスエラーになるのはなぜか。
   get 'comments/new'
   post '/comments', to: 'comments#create'
+  
+  delete 'topics/:id', to: 'topics#destroy'
+  #おくられてきたtopics/idをtopicscontrollerのdestroyアクションにつなげる。
 end
 
