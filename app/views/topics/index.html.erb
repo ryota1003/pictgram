@@ -11,7 +11,7 @@
                <%= topic.user.name %>
                  <!--投稿した記事の写真の上にuserの名前が入る。-->
                  <!--？ なぜこの表記になるのか。覚えるしかないのか。-->
-               <%= link_to "削除", "/topics/" + topic.id.to_s, method: :delete %>
+               <%= link_to "削除", "/topics/" + topic.id.to_s, class: 'sakujo-text', method: :delete %>
                <!--/topics/idがcontrollerに送られる。idは数値だから.to_sをつける。-->
             </h2>
             <%= image_tag topic.image.url %>

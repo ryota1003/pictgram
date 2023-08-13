@@ -21,8 +21,12 @@ class TopicsController < ApplicationController
   
   def destroy
     @topic = Topic.find(params[:id])
-    @topic.destroy
-    redirect_to "/topics"
+    if @topic.destroy
+     redirect_to topics_path, success: "削除に成功しました"
+    else
+      flash.now[:danger] = "削除に失敗しました"
+      render :index
+    end
   end
 
   private
